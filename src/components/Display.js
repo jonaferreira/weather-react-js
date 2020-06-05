@@ -9,8 +9,8 @@ import {
 import Axios from "axios";
 import useStyles from "../syles/Styles";
 
-const API_KEY_WEATHER = "c22e4f8f414950a873b42407d4253412";
-const API_KEY_GOOGLE = "AIzaSyALGD0_f9SHFf-RZPqE4Ts31UJQ6C8BqE8";
+const API_KEY_WEATHER = "";
+const API_KEY_GOOGLE = "";
 
 const Display = ({ latitude, longitude }) => {
   const classes = useStyles();
@@ -85,7 +85,7 @@ const Display = ({ latitude, longitude }) => {
             <Typography variant="h4">{weather.weather[0].main}</Typography>
             <Avatar
               alt={`{weather.weather[0].main}`}
-              src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}.png`}
+              src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}.png`}
               className={classes.large}
             />
           </Grid>
